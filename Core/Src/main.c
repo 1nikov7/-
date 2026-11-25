@@ -1,8 +1,9 @@
+//начало работы
 #include <stdint.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include <time.h>
-//
+
 int main(void) 
 { 
     *(uint32_t*)(0x40023800UL + 0x30UL) |= 0x38;            //0x38 Включение тактирования портов GPIOD, GPIOE и GPIOF(RCC на мемори мап)
